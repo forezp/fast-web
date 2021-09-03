@@ -24,7 +24,7 @@ import java.util.List;
 public class MysqlGenerator {
 
 
-   public static String[] tableNames={"sys_user"};
+   public static String[] tableNames={"sys_dict"};
 
    public static String packageName="io.github.forezp.fastwebadmin";
     /**

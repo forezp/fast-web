@@ -4,10 +4,6 @@ spring:
   application:
     name: fast-web-admin
   datasource:
-    hikari:
-      maximum-pool-size: 3
-      auto-commit: true
-    type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/fastweb?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
     username: root
