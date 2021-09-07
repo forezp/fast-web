@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.forezp</groupId>
     <artifactId>fast-web-common</artifactId>
-    <version>1.0</version>
+    <version>${project.parent.version}</version>
     <name>fast-web-common</name>
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
