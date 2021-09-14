@@ -7,14 +7,17 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/fastweb?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
     username: root
+    password:
+  redis:
+    database: 0
+    host: 122.51.109.221
+    port: 6379
     password: 123456
-
 
 # Logger Config
 logging:
   level:
     io.github.forezp.fastweb: debug
-
 
 
 

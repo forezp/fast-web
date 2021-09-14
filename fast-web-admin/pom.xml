@@ -33,11 +33,11 @@
             <artifactId>fast-web-mybatis</artifactId>
             <version>${project.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.zaxxer</groupId>-->
-<!--            <artifactId>HikariCP</artifactId>-->
-<!--            <version>5.0.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>io.github.forezp</groupId>
+            <artifactId>fast-web-cache</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
