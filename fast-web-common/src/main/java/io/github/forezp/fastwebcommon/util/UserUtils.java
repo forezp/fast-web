@@ -10,9 +10,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 //import static io.github.forezp.common.constant.CommonConstants.STRANGER;
 //import static io.github.forezp.permission.auth.RequestHolder.CURRENT_TOKEN;
 
-/**
- * Created by forezp on 2019/7/26.
- */
+
 public class UserUtils {
 
 //    public static String getCurrentToken() {

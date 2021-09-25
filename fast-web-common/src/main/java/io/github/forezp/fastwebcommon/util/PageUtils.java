@@ -7,10 +7,7 @@ import io.github.forezp.fastwebcommon.exception.FastwebException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author: fangzhipeng.
- * @createTime: 2017/8/4.
- */
+
 public class PageUtils {
 
     private static Logger logger = LoggerFactory.getLogger(PageUtils.class);

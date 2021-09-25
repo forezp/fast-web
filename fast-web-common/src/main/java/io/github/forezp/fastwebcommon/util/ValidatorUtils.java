@@ -30,8 +30,8 @@ public class ValidatorUtils {
 
     /**
      * 检验实体
-     * @param obj
-     * @param <T>
+     * @param obj  实体
+     * @param <T> 结果
      */
     public static <T> void validateEntity(T obj) {
         ValidationResult result = new ValidationResult();
@@ -73,9 +73,9 @@ public class ValidatorUtils {
     /**
      * 检验实体中的某个字段
      *
-     * @param obj
-     * @param propertyName
-     * @param <T>
+     * @param obj 实体
+     * @param propertyName 字段
+     * @param <T> 结果
      */
     public static <T> void validateProperty(T obj, String propertyName) {
         logger.debug("校验参数 {}", propertyName);

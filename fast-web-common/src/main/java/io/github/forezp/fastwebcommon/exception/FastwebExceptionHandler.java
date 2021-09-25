@@ -22,9 +22,7 @@ public class FastwebExceptionHandler {
 
     private final Logger logger = LoggerFactory.getLogger(FastwebExceptionHandler.class);
 
-    /**
-     * 200 - taichi exception
-     */
+
     @ExceptionHandler(FastwebException.class)
     public ResponseEntity<RespDTO> handleException(Exception e) {
         RespDTO resp = new RespDTO();
@@ -36,9 +34,7 @@ public class FastwebExceptionHandler {
     }
 
 
-    /**
-     * 400 - Bad Request
-     */
+
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<RespDTO> handleHttpMessageNotReadableException() {
 
@@ -46,9 +42,7 @@ public class FastwebExceptionHandler {
         return new ResponseEntity(getRespDTOByException(status), status);
     }
 
-    /**
-     * 405 - Method Not Allowed
-     */
+
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public ResponseEntity<RespDTO> handleHttpRequestMethodNotSupportedException() {
 
@@ -56,9 +50,7 @@ public class FastwebExceptionHandler {
         return new ResponseEntity(getRespDTOByException(status), status);
     }
 
-    /**
-     * 415 - Unsupported Media Type
-     */
+
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     public ResponseEntity<RespDTO> handleHttpMediaTypeNotSupportedException() {
 
@@ -66,9 +58,7 @@ public class FastwebExceptionHandler {
         return new ResponseEntity(getRespDTOByException(status), status);
     }
 
-    /**
-     * 500 - Internal Server Error
-     */
+   
     @ExceptionHandler(Exception.class)
     public ResponseEntity<RespDTO> exception(Exception e) {
         e.printStackTrace();

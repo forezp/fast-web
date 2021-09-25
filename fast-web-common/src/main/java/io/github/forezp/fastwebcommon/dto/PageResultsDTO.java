@@ -23,9 +23,7 @@ public class PageResultsDTO<T> {
     }
 
 
-    /**
-     * 总共几页
-     */
+
     public int getTotalPage(int listSize) {
         int totalPage = listSize / this.pageSize;
         if (totalPage == 0 || totalCount % pageSize != 0) {
@@ -65,9 +63,7 @@ public class PageResultsDTO<T> {
         }
     }
 
-    /**
-     * 调整页码，使不超过最大页数
-     */
+
     public void adjustPageNo(int listSize) {
         if (page == 1) {
             return;

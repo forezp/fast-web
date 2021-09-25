@@ -17,11 +17,6 @@ import static io.github.forezp.fastwebcommon.request.RequestHolder.REQUEST_SERVL
 public class HttpUtils {
 
 
-    /**
-     * 尝试获取当前请求的HttpServletRequest实例
-     *
-     * @return HttpServletRequest
-     */
     public static HttpServletRequest getHttpServletRequest() {
         HttpServletRequest servletRequest = null;
         try {
@@ -47,12 +42,7 @@ public class HttpUtils {
         return map;
     }
 
-    /**
-     * 解析参数列表为map
-     *
-     * @param request request请求对象
-     * @return 参数集合
-     */
+
     public static Map<String, String> getParams(HttpServletRequest request) {
         Map<String, String[]> map = request.getParameterMap();
         Map<String, String> param = new LinkedHashMap<>();
@@ -72,12 +62,7 @@ public class HttpUtils {
         return param;
     }
 
-    /**
-     * 获取请求客户端的真实ip地址
-     *
-     * @param request 请求对象
-     * @return ip地址
-     */
+
     public static String getIpAddress(HttpServletRequest request) {
 
         // 获取请求主机IP地址,如果通过代理进来，则透过防火墙获取真实IP地址
@@ -112,23 +97,12 @@ public class HttpUtils {
         return ip;
     }
 
-    /**
-     * 获取请求客户端的真实ip地址
-     *
-     * @param
-     * @return ip地址
-     */
     public static String getIpAddress() {
         // 获取请求主机IP地址,如果通过代理进来，则透过防火墙获取真实IP地址
         return getIpAddress(getHttpServletRequest());
     }
 
-    /**
-     * web应用绝对路径
-     *
-     * @param request 请求对象
-     * @return 绝对路径
-     */
+
     public static String getBasePath(HttpServletRequest request) {
         String path = request.getContextPath();
         String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
