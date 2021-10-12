@@ -17,6 +17,7 @@
 
     <packaging>pom</packaging>
     <properties>
+        <hashids.version>1.0.3</hashids.version>
         <java.version>1.8</java.version>
         <mybatis-plus-boot-starter.vesion>3.4.3.2</mybatis-plus-boot-starter.vesion>
     </properties>
@@ -32,6 +33,13 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>org.hashids</groupId>
+                <artifactId>hashids</artifactId>
+                <version>${hashids.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>com.baomidou</groupId>

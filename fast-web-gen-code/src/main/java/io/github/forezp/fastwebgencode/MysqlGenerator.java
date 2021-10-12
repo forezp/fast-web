@@ -24,9 +24,12 @@ import java.util.List;
 public class MysqlGenerator {
 
 
-   public static String[] tableNames={"qrtz_triggers_group","qrtz_triggers_info"};
+    public static String[] tableNames = {"gw_group", "gw_jwt", "gw_oauth", "gw_path_exclude"
+            , "gw_path_rewrite", "gw_ratelimit_rule", "gw_route_filters",
+            "gw_route_rule", "gw_sign", "gw_route_predicates"};
 
-   public static String packageName="io.github.forezp.jobserver";
+    public static String packageName = "io.github.forezp.mgwbops";
+
     /**
      * RUN THIS
      */
@@ -50,7 +53,7 @@ public class MysqlGenerator {
 
         // 数据源配置allowPublicKeyRetrieval=true&useSSL=false
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/matrix-job?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/mgw-bops?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
@@ -90,7 +93,7 @@ public class MysqlGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("io.github.forezp.common.base.BaseEntity");
+        strategy.setSuperEntityClass("io.github.forezp.fastwebmybatis.base.BaseEntity");
         strategy.setEntityLombokModel(true);
         strategy.setCapitalMode(true);
         strategy.setEntitySerialVersionUID(true);
