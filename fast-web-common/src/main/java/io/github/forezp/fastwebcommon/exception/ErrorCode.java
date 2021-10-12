@@ -24,6 +24,7 @@ public enum ErrorCode {
     MISSING_ARGS(1014, "参数缺失"),
     USER_IS_NOT_EXIST(1015,"用户不存在"),
 
+    PRC_ERROR(4004,"RPC调用失败"),
     TASK_AUDIT_PARAM(5004, "流程判断节点参数错误");
 
 
