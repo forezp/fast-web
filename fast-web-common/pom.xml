@@ -61,6 +61,12 @@
 
         </dependency>
 
+        <dependency>
+            <groupId>org.hashids</groupId>
+            <artifactId>hashids</artifactId>
+        </dependency>
+
+
     </dependencies>
 
 

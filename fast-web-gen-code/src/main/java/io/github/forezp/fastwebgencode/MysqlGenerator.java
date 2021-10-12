@@ -24,7 +24,7 @@ import java.util.List;
 public class MysqlGenerator {
 
 
-   public static String[] tableNames={"app_registry"};
+   public static String[] tableNames={"qrtz_triggers_group","qrtz_triggers_info"};
 
    public static String packageName="io.github.forezp.jobserver";
     /**

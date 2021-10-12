@@ -23,8 +23,7 @@ public enum ErrorCode {
     FILE_PATTERN_NOT_SUPPORTED(1012, "文件格式不对"),
     MISSING_ARGS(1014, "参数缺失"),
     USER_IS_NOT_EXIST(1015,"用户不存在"),
-
-    PRC_ERROR(4004,"RPC调用失败"),
+    GEN_HASH_ID_PARA_ERROR(2001,"生成HashId失败"),
     TASK_AUDIT_PARAM(5004, "流程判断节点参数错误");
 
 
